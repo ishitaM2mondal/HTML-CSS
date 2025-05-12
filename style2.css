@@ -1,0 +1,33 @@
+h1 {
+    color: rgb(79, 201, 63);
+    background-color: rgb(200, 217, 48);
+    font-size: 30px;
+    text-decoration: underline;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+h2 {
+    color: rgb(34, 188, 3);
+}
+p {
+    color: rgb(237, 41, 73);
+    text-align: center;
+    font-size: 20px;
+    line-height: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 3px;
+    column-gap : 60px;
+}
+li {
+    color:rgb(134, 24, 156);
+    list-style-type: square; /*change the design of bullet points */
+    text-shadow: 2px 2px /*goldenrod */ rgb(159, 98, 123) ;
+}
+ul {
+   /* border-width: 4px;
+    border-style: dotted;
+    border-color: blue; */
+    border: 4px dotted blueviolet; /*write the same 3 line into 1 */ 
+    border-bottom: 4px dotted darkgoldenrod; /*for various side border we can use this */
+
+}

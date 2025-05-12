@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            HTML Forms
+        </title>
+    </head>
+    <body>
+        <h1>HTML forms</h1>
+        <!--<form action=""></form> --> <!--the actions after submit the form-->
+        gitgi
+        <form>
+            <label for="username">Enter username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your name" required> <!--required tag for mandatory-->
+            <br><br>  <!--br means that much gaps between the lines-->
+            <label for="email">Enter email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <br><br>
+            <label type="password">password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <p>Select your age:</p>
+
+            <input type="radio" name="age" value="0-25" id="option-1">
+            <label for="option-1">0-25</label>
+            <br><br>
+            <input type="radio" name="age" value="26-60" id="option-2">
+            <label for="option-2">26-60</label>
+            <br><br>
+            <input type="radio" name="age" value="upto 60" id="option-3">
+            <label for="option-3">Upto 60</label>
+
+            <br><br>
+
+
+            <label for="question">Security questions:</label>
+            <select name="question" id="question">
+                <option value="q1">What is your fav colour?</option>
+                <option value="q2">What is your fav food?</option>
+                <option value="q3">What is your fav place?</option>
+            </select>
+
+            <br><br>
+
+            <label for="">Security answer:</label>
+            <input type="text" id="answer" name="answer">
+
+            <br><br>
+            <label for="bio">Enter bio:</label><br>
+            <textarea name="bio" id="bio" cols="30" rows="10" placeholder="about you"></textarea>  <!--placeholder tag just for show-->
+            
+            <br><br>
+            <input type="submit" value="Submit the form">
+        </form>
+    
+    
+    </body>
+</html>

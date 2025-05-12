@@ -1,0 +1,43 @@
+
+p.error {
+    color: rgb(209, 128, 128);
+}
+p.success {
+    color: rgb(13, 185, 128);
+}
+p.success.feedback{
+    color: #093763;
+    border: 2px dotted goldenrod;
+}
+
+#content{  /* for the id */
+    background-color : pink;
+    padding: 20px;
+}
+/*div .error{
+    color: pink;
+}*/
+a[href="https://www.thenetninja.co.uk"]{ /*anchro tag color*/ /*if you want to same color for href everywhere */
+    background-color: rgb(99, 213, 175);
+    color: rgb(224, 16, 30);
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+a[href*="google"]{    /*it includes something*/
+    color: blueviolet;
+    border: 2px dashed yellow;
+} /*in place of * if we use href$ it means any href which ends with these now nothing ends with this so if i save it nothing's going to get styled this way*/
+
+a[href$=".com"]{
+    color:aqua;
+    border: 2px solid palevioletred;
+}
+
+div{
+    color: lightcoral;
+    border: 2px dashed purple;
+    margin: 30px;
+    font-weight: bold;
+}

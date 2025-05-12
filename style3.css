@@ -1,0 +1,11 @@
+span {
+    /*display: block; when hover it will take all over the line means rooms where it exists. */
+    padding: 20px;
+    margin : 20px;
+
+}
+div {
+    /*display: inline; when hover it will take only its spelling space,, */
+    display: inline-block; /*for mixture*/
+    border: 2px dotted rgb(193, 60, 82);
+}
