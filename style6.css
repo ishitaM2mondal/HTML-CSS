@@ -1,0 +1,127 @@
+/* . for class  and # for id */
+
+
+body, ul, li, h1, h2, a{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header{
+    background-color: beige;
+    color: blueviolet;
+    text-align: center;
+   /* position: static; normal document flow default setting*/
+    position: fixed; /*fixed while page is scroll up down */
+    width: 100%;
+    z-index: 2;/*bring the element forward right to the page value 1 or 2*/
+    /*to back the element under some element z-index will be -1 or -2*/
+}
+header h1{
+    border: 8px solid white;
+    color: purple;
+    padding: 6px 12px;
+    display: inline-block;
+    border-radius: 30px;/*border radius cureve the corner of the element*/
+}
+.banner{
+    position: relative;/*we can move it relative to its original position*/
+    /*left: 100px; it is relative to its parents
+    top: 100px;*/
+}
+.banner img{
+    max-width: 100%;
+}
+.banner .Welcome{
+    background-color: rgb(111, 111, 13);
+    color: chartreuse;
+    padding: 30px;
+    position: absolute;/*same height from the top even the banner gets bigger or smaller */
+    left: 0px;/*parent element has to have a position property that is not static it should be reletive ,
+    and we use absolute position when we want to position inside that parents then we can use combination of left,right,to,bottom instead of the position of the element of the parent one*/
+    top: 30%;
+}
+.banner h2{
+    font-size: 40px;
+}
+.banner h2 span{
+    font-size: 50px;
+    color: blue;
+}
+nav {
+    background-color: bisque;
+    padding: 20px;
+    position: sticky;
+    top: 106px;/*when it goes upto the 150% from the top it stick there */
+}
+nav ul{
+    white-space: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+nav li{
+    width: 25%;
+    display: inline-block;
+    font-size: 24px;
+}
+nav li a{
+    text-decoration: none;
+    color: orangered;
+}
+nav li a.join{
+    color: orange;
+    padding: 10px;
+}
+main{
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px auto;
+    pad: 0 40px;
+    box-sizing: border-box;
+}
+article h2{
+    color: rgb(131, 11, 131);
+    font-size: 50px;
+    line-height: 10px;
+    text-align: center;
+}
+article p{
+    color: rgb(20, 100, 131);
+    line-height: 2em;
+}
+.images{
+    text-align: center;
+    margin: 80px 0;
+    white-space: nowrap;
+    /*border: 2px solid deeppink;*/
+
+}
+.images li{
+    display: inline-block;
+    margin: 20px 5%;
+}
+.images li img{
+    width: 400px;
+}
+.join{
+    background-color: blanchedalmond;
+    text-align: center;
+    color: brown;
+    padding: 60px 20px;
+}
+.join h2{
+    font-size: 36px;
+    color: rgb(101, 226, 43);
+}
+form input{
+    margin:20px 0;
+    border-radius: 20px;
+    font-size: 24px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 10px dashed palegreen;
+}
+footer{
+    background-color: rgb(83, 145, 119);
+    color: rgb(40, 5, 72);
+}

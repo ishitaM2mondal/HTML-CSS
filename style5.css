@@ -1,0 +1,20 @@
+li {
+    color: rgb(222, 60, 87);
+
+}
+a {
+    color: rgb(15, 93, 196);
+}
+h1 {
+    color: rgb(3, 45, 112);
+    background-color: azure;
+    text-align: center;
+}
+h2{
+    color: rgb(17, 17, 131);
+    background-color: blanchedalmond;
+    text-align: center;
+}
+body{
+    background-color: rgb(215, 131, 145);
+}
