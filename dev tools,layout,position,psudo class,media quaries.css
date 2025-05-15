@@ -1,5 +1,9 @@
 /* . for class  and # for id */
-
+/*pseudo class time  p:hovar means one colon,, and
+pseduo element time double colon p::after*/
+/*media query-tell the browser how to style the element at particular viewpoint dimensions.
+viewport meta tag-tells the browser what width the viewport should be
+responsive images- only load smaller imagez for mobile devices*/
 
 body, ul, li, h1, h2, a{
     margin: 0;
@@ -82,12 +86,14 @@ main{
 article h2{
     color: rgb(131, 11, 131);
     font-size: 50px;
-    line-height: 10px;
+    line-height: 70px;
     text-align: center;
 }
 article p{
-    color: rgb(20, 100, 131);
+    color: rgb(7, 81, 53);
     line-height: 2em;
+    text-align: center;
+    background-color: bisque;
 }
 .images{
     text-align: center;
@@ -124,4 +130,95 @@ form input{
 footer{
     background-color: rgb(83, 145, 119);
     color: rgb(40, 5, 72);
+    text-align: center;
 }
+/*pseudo classes hover - means when we put the cursor on the text this changes will happen*/
+nav li a:hover{
+    text-decoration: underline;
+    background-color: rgb(150, 115, 184);
+    padding: 3px;
+}
+.images li:hover{
+    position: relative;
+    top: -4px;
+}
+form input:focus{ /*when we click on that field it will be chnaged by this property */
+    border: 4px dashed red;
+}
+form input:valid{ /*when it is valid it changed in this patter*/
+    border: 4px solid rgb(180, 163, 19);
+}
+/*nav li:first-child{
+    border: 3px solid salmon; the first element of the parent class
+}*/
+article p::first-line{ /*to specify the first line of the article */
+    font-weight: bold;
+    font-size: 1.5em;
+}
+section.join p::first-letter{
+    font-size: 2em;
+    color: rgb(255, 200, 0);
+}
+ p::selection{ /*when select the text its color changed */
+    color: brown;
+    background-color: blanchedalmond;
+}
+p::after{ /*to add ... after the content we use it*/
+    content: '...';
+}
+/*responsive styles*/
+@media only screen and (max-width: 1400px){
+    .banner .Welcome h2{
+       /* color: aqua;
+        padding: 30px;
+        position: absolute;
+        left: 0;
+        top: 30%;*/
+        font-size: 80px;
+    }
+    nav li{
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 960px){
+    .banner .Welcome h2{
+       /* color: aqua;
+        padding: 30px;
+        position: absolute;
+        left: 0;
+        top: 30%;*/
+        font-size: 40px;
+    }
+}
+@media only screen and (max-width: 700px){
+    .banner .Welcome h2{
+       /* color: aqua;
+        padding: 30px;
+        position: absolute;
+        left: 0;
+        top: 30%;*/
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width: 500px){
+    .images li img{
+        width: 270px;
+        
+    }
+    .images li{
+        display: block;
+    }
+    nav li a{
+        font-size: 15px;
+    } 
+    article p, .join{
+        font-size: 15px;
+    }
+    .banner .Welcome{
+        font-size: 20px;
+    }
+    .banner h2 span{
+        font-size: 50px;
+    }
+}
+     
