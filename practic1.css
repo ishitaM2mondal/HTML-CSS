@@ -1,0 +1,41 @@
+/*what are the ways we can hide the elements in css*/
+p{
+    display: none;/*removes an element from the layout*/    visibility: hidden;
+    opacity: 0;/*hides the element but still keeps its space in the layout*/
+    height: 0;
+    width: 0;
+    overflow: hidden;
+}
+
+
+/*how can we animate with css*/
+@keyframes identifier {
+    
+}
+/* animation-name:
+animation-duration:
+animation-timing-function:
+animation-delay: */
+
+/*Universal selectors= special type selectors that targets all HTMl elements on a webpage  *{color:pink;}*/
+
+
+/*types of CSS:inline, internal(embedded) and external
+    //inline:<p style="color: pink;">Inline one</p>,applies directly wihtin an html paragraph tag
+    //internal: defines styleswithin head section using <style> tag.
+    //external: writes in separate .css file and linked to one or more html docs using <link>tag. <link rel="stylesheet" href="style.css">
+
+inline>internal=external
+
+
+/*CSS box modela box that wraps around every html elements.cosist of padding,margin,borders and ::content*/
+ /* p{
+    width: 30px;
+    border: 2px solid pink;
+    padding: 50px;
+    margin: 20px;
+ } */
+  /*content=text and image appears
+    padding=clears an area around the content
+    border=goes around the paddign and content
+    margin=clears area outside the border*/
